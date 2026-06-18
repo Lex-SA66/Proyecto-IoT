@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  mqtt_broker:
+    image: eclipse-mosquitto:latest
+    container_name: kms_mqtt
+    ports:
+      - "1883:1883"
+    # Configuración básica para permitir conexiones anónimas locales
+    command: mosquitto -c /mosquitto-no-auth.conf
+    volumes:
+      - ./mosquitto.conf:/mosquitto-no-auth.conf
+    restart: unless-stopped
+
+  kms_web:
+    build: .
+    container_name: kms_backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mqtt_broker
+    restart: unless-stopped
