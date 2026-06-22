@@ -4,6 +4,9 @@
 
 Un proyecto Full-Stack de seguridad informática y sistemas embebidos. Combina criptografía, telemetría de sensores en tiempo real (FreeRTOS), redes locales (MQTT) y desarrollo web (Flask) para crear una bóveda de archivos blindada contra accesos físicos y lógicos no autorizados.
 
+Vídeos muestra del funcionamiento del proyecto:
+https://drive.google.com/drive/folders/16WSvXWd0N8RQQljvbggiRwc9IMhkvlaS?usp=sharing
+
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-20232A?style=for-the-badge&logo=freertos&logoColor=27B24C)
